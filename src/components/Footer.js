@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <div className="newsletter-form"> Sign up for our newsletter!</div>
       <div className="social">
         <a href="https://www.instagram.com/mintandmagicshoppe/">Instagram</a>

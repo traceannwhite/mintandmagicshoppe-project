@@ -83,6 +83,19 @@
 }
 // MAIN - Customer Reviews
 
+.reviews-carousel {
+  padding: 20px;
+}
+
+// FOOTER
+
+.footer {
+  background-color: #bce9d4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 // @mixin square($length) {
 //   height: $length;
 //   width: 100%;
