@@ -6,14 +6,23 @@ const Header = () => {
     <div className="header">
       <div className="icons">
         <div className="menu-icon">
-          <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627864926/list_lsoefu.svg"></img>
+          <img
+            src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627864926/list_lsoefu.svg"
+            alt=""
+          ></img>
         </div>
         <div className="title-img">
-          <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866428/Screen_Shot_2021-08-01_at_7.54.50_PM_xqqg7u.png"></img>
+          <img
+            src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866428/Screen_Shot_2021-08-01_at_7.54.50_PM_xqqg7u.png"
+            alt=""
+          ></img>
         </div>
         <div className="cauldron-icon">
           <Link to="/Cart">
-            <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866433/cauldron_vtbv4m.png"></img>
+            <img
+              src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866433/cauldron_vtbv4m.png"
+              alt=""
+            ></img>
           </Link>
         </div>
       </div>

@@ -8,10 +8,10 @@ const Products = (props) => {
         {props.products.map((product, index) => {
           return (
             <div className="product-card" key={index}>
-              <div className="name">{product.productName}</div>
-              <div className="img">{product.image}</div>
-              <div className="desc">{product.description}</div>
-              <div className="price">{product.price}</div>
+              <img src={product.image} alt=""></img>
+              <h1 className="name">{product.productName}</h1>
+              <p className="desc">{product.description}</p>
+              <div className="price">${product.price}</div>
               <button className="add-to-cart">Add To Cart</button>
             </div>
           );

@@ -19,17 +19,12 @@ const ShopProducts = () => {
     //map over the array
     const productsArr = data.items.map((item, index) => {
       return {
-        // <div
-        //   className="product-card"
-        //   key={index}
-        //   // onClick={() => props.handleClick()}
-        // >
         productName: item.fields.productName,
         image: data.includes.Asset[index].fields.file.url,
         description: item.fields.description,
         price: item.fields.price,
         inStock: item.fields.inStock,
-        // </div>
+        id: item.fields.id,
       };
     });
 

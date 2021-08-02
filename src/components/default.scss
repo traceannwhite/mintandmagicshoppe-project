@@ -89,6 +89,46 @@
   border-radius: 20px;
 }
 
+// SHOP PRODUCTS PAGE
+
+.product-container {
+  padding: 30px;
+}
+.product-card {
+  //   border: 2px solid black;
+  //   border-radius: 20px;
+  width: 100%;
+  text-align: center;
+
+  .name {
+    font-size: 1em;
+    // padding: 10px;
+    text-transform: uppercase;
+  }
+  img {
+    // padding: 20px;
+    width: 100%;
+    margin: auto;
+  }
+
+  p {
+    text-align: justify;
+    margin: auto;
+  }
+
+  .price {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  button {
+    // padding: 10px;
+    // margin: 10px;
+    width: 100%;
+    border: 2px solid black;
+    margin: 0 0 20px 0;
+  }
+}
+
 // FOOTER
 
 .footer {
