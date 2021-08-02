@@ -7,11 +7,12 @@ const Products = (props) => {
       <div className="product-container">
         {props.products.map((product, index) => {
           return (
-            <div className="product-card">
+            <div className="product-card" key={index}>
               <div className="name">{product.productName}</div>
               <div className="img">{product.image}</div>
               <div className="desc">{product.description}</div>
               <div className="price">{product.price}</div>
+              <button className="add-to-cart">Add To Cart</button>
             </div>
           );
         })}
