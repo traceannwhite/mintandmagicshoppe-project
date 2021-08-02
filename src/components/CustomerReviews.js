@@ -36,3 +36,7 @@ const items = [
 const CustomerReviews = () => <UncontrolledCarousel items={items} />;
 
 export default CustomerReviews;
+
+
+// PROBLEM: Had initial trouble with adding url to src
+// SOLUTION: Won't except files in HEIC format. Must convert to JPG before inputting. 
