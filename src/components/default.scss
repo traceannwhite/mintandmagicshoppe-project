@@ -5,12 +5,83 @@
   box-sizing: border-box;
 }
 
+// HEADER
+
+.header {
+  background-color: #bce9d4;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  .menu-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title-img img {
+    width: 200px;
+  }
+  .cauldron-icon img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .menu {
-  padding: 2em;
-}
-.menu-item {
   display: none;
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu-item {
+    margin: 10px;
+    width: 50%;
+  }
 }
+
+// MAIN - Company Image
+
+.company-img img {
+  width: 100%;
+}
+// MAIN - Shop Now Button
+
+.shop-btn {
+  display: flex;
+  justify-content: center;
+}
+.shop-btn button {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  background: white;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+// MAIN - Product Categories
+.product-cat {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.product-cat img {
+  width: 8em;
+  height: 8em;
+  padding: 10px;
+  border-radius: 50%;
+
+  &:hover {
+    border: 2px dotted black;
+    opacity: 40%;
+  }
+}
+// MAIN - Customer Reviews
 
 // @mixin square($length) {
 //   height: $length;
