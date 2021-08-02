@@ -12,7 +12,9 @@ const Header = () => {
           <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866428/Screen_Shot_2021-08-01_at_7.54.50_PM_xqqg7u.png"></img>
         </div>
         <div className="cauldron-icon">
-          <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866433/cauldron_vtbv4m.png"></img>
+          <Link to="/Cart">
+            <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866433/cauldron_vtbv4m.png"></img>
+          </Link>
         </div>
       </div>
       <div className="menu">

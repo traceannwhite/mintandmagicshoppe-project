@@ -1,5 +1,6 @@
 import React from "react";
 import CustomerReviews from "../components/CustomerReviews";
+import Button from "../components/Button";
 
 const Main = () => {
   return (
@@ -8,7 +9,7 @@ const Main = () => {
         <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627865442/Mint_MagicShoppe-02_gqorlp.jpg"></img>
       </div>
       <div className="shop-btn">
-        <button>SHOP NOW</button>
+        <Button />
       </div>
       <div className="product-cat">
         <img src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627871386/christmas-2924667_kq4dcd.jpg"></img>
