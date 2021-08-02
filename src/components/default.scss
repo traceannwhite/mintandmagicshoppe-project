@@ -1,0 +1,44 @@
+* {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  padding: 2em;
+}
+.menu-item {
+  display: none;
+}
+
+// @mixin square($length) {
+//   height: $length;
+//   width: 100%;
+//   border: 3px solid black;
+//   &:hover {
+//     border: 5px solid purple;
+//   }
+// }
+
+// .body {
+//   display: flex;
+
+//   .one {
+//     @include square(100px);
+//     &:hover {
+//       border: 5px solid green;
+//     }
+//   }
+
+//   .two {
+//     @include square(150px);
+//   }
+//   .three {
+//     @include square(200px);
+//   }
+
+//   .four {
+//     @include square(250px);
+//   }
+// }
