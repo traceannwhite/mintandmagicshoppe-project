@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Products from "../components/Products";
+import AddButton from "../components/AddButton";
 
-const ShopProducts = () => {
+const ShopProducts = (props) => {
   // const [product, setProduct] = useState([]);
 
   const [products, setProducts] = useState([]);
@@ -17,7 +18,7 @@ const ShopProducts = () => {
     //storing the data in state
 
     //map over the array
-    const productsArr = data.items.map((item, index) => {
+    const itemsArr = data.items.map((item, index) => {
       return {
         productName: item.fields.productName,
         image: data.includes.Asset[index].fields.file.url,
@@ -28,8 +29,8 @@ const ShopProducts = () => {
       };
     });
 
-    setProducts(productsArr);
-    console.log(productsArr);
+    setProducts(itemsArr);
+    // console.log(itemsArr);
   };
 
   //trigger it to load
@@ -40,7 +41,7 @@ const ShopProducts = () => {
 
   return (
     <div>
-      <Products products={products} />
+      <Products products={products} addToCart={props.addToCart} />
     </div>
   );
 };

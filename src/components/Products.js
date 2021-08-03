@@ -1,4 +1,5 @@
 import React from "react";
+import AddButton from "./AddButton";
 
 const Products = (props) => {
   // console.log("Products", props);
@@ -12,7 +13,11 @@ const Products = (props) => {
               <h1 className="name">{product.productName}</h1>
               <p className="desc">{product.description}</p>
               <div className="price">${product.price}</div>
-              <button className="add-to-cart">Add To Cart</button>
+              <AddButton
+                dispatch={props.addToCart}
+                product={product}
+                label="Add to Cart"
+              />
             </div>
           );
         })}

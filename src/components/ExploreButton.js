@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = () => {
+const ExploreButton = () => {
   return (
     <Link to="/ShopProducts">
       <button className="shop">Explore</button>
@@ -9,4 +9,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default ExploreButton;

@@ -1,6 +1,6 @@
 import React from "react";
 import CustomerReviews from "../components/CustomerReviews";
-import Button from "../components/Button";
+import ExploreButton from "../components/ExploreButton";
 
 const Main = () => {
   return (
@@ -12,7 +12,7 @@ const Main = () => {
         ></img>
       </div>
       <div className="shop-btn">
-        <Button />
+        <ExploreButton />
       </div>
       <div className="product-cat">
         <img
