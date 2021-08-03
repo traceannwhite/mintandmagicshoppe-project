@@ -22,41 +22,43 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   // update state when menu is open (! overrides )
   const toggleMenu = () => setMenuOpen(!menuOpen);
-  //need an onClick event in the button to set the state
-  //need to add to the link itself so that you'll still go to new page when menu closes
-  // const hideMenu = () => setMenuOpen(false);
-  // const showMenu = () => setMenuOpen(true);
+  const hideMenu = () => setMenuOpen(false);
+  const showMenu = () => setMenuOpen(true);
 
   const navigation = [
     { link: "/", text: "Home" },
     { link: "/ShopProducts", text: "Shop Products" },
-    { link: "/MyCart", text: "My Cart" },
+    { link: "/Cart", text: "My Cart" },
     { link: "/About", text: "About" },
     { link: "/Contact", text: "Contact" },
   ];
 
   return (
     <div className="header">
-      <div className="icons">
+      <div className="nav-bar">
+        {/* need an onClick event in the button to set the state */}
         <button className="menu-button" onClick={toggleMenu}>
+          {/* {toggleMenu ? "menu-button" : "menu-links"} */}
           <img
             src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627864926/list_lsoefu.svg"
             alt=""
           ></img>
-          <ul className="menu-links">
-            {navigation.map((nav) => (
-              <li key={nav.text}>
-                <Link to={nav.link}>{nav.text}</Link>
-              </li>
-            ))}
-          </ul>
         </button>
-        <div className="title-img">
-          <img
-            src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627866428/Screen_Shot_2021-08-01_at_7.54.50_PM_xqqg7u.png"
-            alt=""
-          ></img>
-        </div>
+        <ul className="menu-links">
+          {navigation.map((nav) => (
+            <li key={nav.text}>
+              {/* need to add to the link itself so that you'll still go to new page when menu closes */}
+              <Link
+                to={nav.link}
+                onClick={toggleMenu}
+                onBlur={hideMenu}
+                onFocus={showMenu}
+              >
+                {nav.text}
+              </Link>
+            </li>
+          ))}
+        </ul>
         <button className="cauldron-button">
           <Link to="/Cart">
             <img

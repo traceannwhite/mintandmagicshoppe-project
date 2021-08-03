@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Main from "./pages/Main";
 import ShopProducts from "./pages/ShopProducts";
 import Cart from "./pages/Cart";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import "./components/default.scss";
 
@@ -26,11 +27,14 @@ function App() {
           <Main />
         </Route>
         <Route path="/ShopProducts">
-          <ShopProducts addToCart={addToCart}/>
+          <ShopProducts addToCart={addToCart} />
           {/* make addToCart function available to child (Shop Products) */}
         </Route>
         <Route path="/Cart">
           <Cart cart={cart} />
+        </Route>
+        <Route>
+          <About />
         </Route>
       </Switch>
       <Footer />
