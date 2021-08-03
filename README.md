@@ -94,27 +94,29 @@ Unless otherwise noted, time is listed in hours:
 
 | MVP Component                                            | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create React app and files for all components and pages  |    H     |     30 min     |               |             |
-| Basic Navbar & Footer                                    |    H     |       1        |               |             |
-| Set up basic React routing                               |    H     |       1        |               |             |
-| Make API call                                            |    H     |       2        |               |             |
-| Create shop now button functionality                     |    H     |       3        |               |             |
-| Static main page items                                   |    H     |       3        |               |             |
-| Adding products from product page to cart page           |    H     |       3        |               |             |
-| Pull API product information                             |    H     |       3        |               |             |
-| Add content to contentful                                |    H     |       1        |               |             |
-| CSS Styling                                              |    H     |       3        |               |             |
-| Additonal troubleshooting or research                    |    H     |       3        |               |             |
-| Total                                                    |    H     |      23.5      |               |             |
+| Create React app and files for all components and pages  |    H     |     30 min     |    30 min     |   30 min    |
+| Basic Navbar & Footer                                    |    H     |       1        |    30 min     |   30 min    |
+| Set up basic React routing                               |    H     |       1        |    30 min     |   30 min    |
+| Make API call                                            |    H     |       2        |      1.5      |     1.5     |
+| Create shop now button functionality                     |    H     |       3        |    30 min     |   30 min    |
+| Static main page items                                   |    H     |       3        |      1.5      |     1.5     |
+| Adding products from product page to cart page button    |    H     |       3        |       3       |      3      |
+| Pull API product information                             |    H     |       3        |       2       |      2      |
+| Add content to contentful                                |    H     |       1        |       1       |      1      |
+| CSS Styling                                              |    H     |       3        |       3       |      3      |
+| Additonal troubleshooting or research                    |    H     |       3        |       2       |      2      |
+| Total                                                    |    H     |      23.5      |      16       |     16      |
 | Post-MVP ----------------------------------------------- | -------- | -------------- | ------------- | ----------- |
-| Make customer review carosel with React Strap            |    H     |       3        |               |             |
+| Remove from Cart Button                                  |    H     |       3        |               |             |
+| Add function to +/- items in cart                        |    L     |       3        |               |             |
+| Make customer review carousel with React Strap           |    M     |       3        |       1       |     Inc     |
 | Add additional pages with static info                    |    M     |       2        |               |             |
-| Add buttons and functions to additional pages            |    M     |       3        |               |             |
+| Add functionality to additional pages                    |    M     |       3        |               |             |
 | Contact Form                                             |    M     |       2        |               |             |
 | Signup/Newsletter                                        |    M     |       3        |               |             |
 | Social Media Links                                       |    M     |       2        |               |             |
 | Additional styling                                       |    L     |       3        |               |             |
-| Total                                                    |    H     |       18       |               |             |
+| Total                                                    |    H     |       24       |               |             |
 
 ## Additional Libraries
 
@@ -124,7 +126,5 @@ Saas CSS
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description. Code snippet should not be greater than 10 lines of code.
-
-The below code is how the leaderboard is populated. The shorter the name, the more dots are added between the name and score. The font size is set progressively smaller for each entry.
 
 - TBD

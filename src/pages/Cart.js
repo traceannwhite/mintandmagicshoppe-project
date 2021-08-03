@@ -1,6 +1,5 @@
-import { cargo } from "async";
+// import { cargo } from "async";
 import React, { useState } from "react";
-import Products from "../components/Products";
 
 const Cart = (props) => {
   // console.log("cart", props);
@@ -19,8 +18,7 @@ const Cart = (props) => {
   return props.cart.map((item, index) => {
     return (
       <div className="cart-item">
-        {/* return item name and image */}
-        {/* {item.includes.Asset[index].fields.file.url} */}
+        {/* return item image and name for cart */}
         <img src={item.image} alt=""></img>
         <h1 className="name">{item.productName}</h1>
         {/* removeFromCart button */}
