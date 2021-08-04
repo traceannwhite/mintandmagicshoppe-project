@@ -17,6 +17,16 @@ function App() {
   const addToCart = (product) => {
     setCart([...cart, product]);
   };
+  //push product into cart
+
+  const removeFromCart = (product) => {
+    //find the item
+    const index = cart.findIndex((selectedItem) => product === selectedItem);
+    //update the array
+    const updateArr = [...cart];
+    updateArr.splice(index, 1);
+    setCart(updateArr);
+  };
   //will push the product into the cart
 
   return (
@@ -31,7 +41,7 @@ function App() {
           {/* make addToCart function available to child (Shop Products) */}
         </Route>
         <Route path="/Cart">
-          <Cart cart={cart} />
+          <Cart cart={cart} removeFromCart={removeFromCart} />
         </Route>
         <Route>
           <About />

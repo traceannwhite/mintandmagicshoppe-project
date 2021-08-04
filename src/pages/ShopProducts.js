@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Products from "../components/Products";
-import AddButton from "../components/AddButton";
+import Button from "../components/Button";
 
 const ShopProducts = (props) => {
   // const [product, setProduct] = useState([]);
@@ -41,7 +41,7 @@ const ShopProducts = (props) => {
 
   return (
     <div>
-      <Products products={products} addToCart={props.addToCart} />
+      <Products products={products} addToCart={props.addToCart} label="add" />
     </div>
   );
 };

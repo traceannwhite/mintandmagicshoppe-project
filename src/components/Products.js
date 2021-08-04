@@ -1,8 +1,8 @@
 import React from "react";
-import AddButton from "./AddButton";
+import Button from "./Button";
 
 const Products = (props) => {
-  // console.log("Products", props);
+  console.log("Products", props);
   const loaded = () => {
     return (
       <div className="product-container">
@@ -13,9 +13,9 @@ const Products = (props) => {
               <h1 className="name">{product.productName}</h1>
               <p className="desc">{product.description}</p>
               <div className="price">${product.price}</div>
-              <AddButton
-                dispatch={props.addToCart}
+              <Button
                 product={product}
+                dispatch={props.addToCart}
                 label="Add to Cart"
               />
             </div>
@@ -25,10 +25,10 @@ const Products = (props) => {
     );
   };
   const loading = () => {
-    return <h1>No List to Display</h1>;
+    return <h1>Products Page Not Working</h1>;
   };
 
-  return props ? loaded() : loading();
+  return props.products ? loaded() : loading();
 };
 
 export default Products;

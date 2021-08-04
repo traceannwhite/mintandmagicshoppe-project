@@ -188,6 +188,29 @@
   }
 }
 
+// .side-cart {
+//   background-color: green;
+
+//   p {
+//     display: flex;
+//   }
+// }
+
+//ABOUT
+
+.company-bio {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    width: 17em;
+    text-align: justify;
+    padding: 10px;
+  }
+}
+
 // FOOTER
 
 // body {

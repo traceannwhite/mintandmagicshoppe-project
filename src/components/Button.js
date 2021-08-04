@@ -2,11 +2,11 @@ import React from "react";
 
 //Watched tutorial - https://www.youtube.com/watch?v=AmIdY1Eb8tY
 
-const AddButton = (props) => {
+const Button = (props) => {
   return (
     <div>
       <button
-        className="add-to-cart"
+        className="add-remove"
         onClick={() => {
           props.dispatch(props.product);
         }}
@@ -17,4 +17,4 @@ const AddButton = (props) => {
   );
 };
 
-export default AddButton;
+export default Button;
