@@ -21,7 +21,9 @@ const Header = () => {
   // set up useState and set the menu state to closed
   const [menuOpen, setMenuOpen] = useState(false);
   // update state when menu is open (! overrides )
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const handleToggle = () => {
+    setMenuOpen((prev) => !prev);
+  };
   const hideMenu = () => setMenuOpen(false);
   const showMenu = () => setMenuOpen(true);
 
@@ -37,22 +39,23 @@ const Header = () => {
     <div className="header">
       <div className="nav-bar">
         {/* need an onClick event in the button to set the state */}
-        <button className="menu-button" onClick={toggleMenu}>
+        <button className="menu-button" open={menuOpen} onClick={handleToggle}>
+          {menuOpen ? "Close" : "Open"}
           {/* {toggleMenu ? "menu-button" : "menu-links"} */}
-          <img
+          {/* <img
             src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627864926/list_lsoefu.svg"
             alt=""
-          ></img>
+          ></img> */}
         </button>
-        <ul className="menu-links">
+        <ul className={`menu-links ${menuOpen ? " show-menu" : ""}`}>
           {navigation.map((nav) => (
             <li key={nav.text}>
               {/* need to add to the link itself so that you'll still go to new page when menu closes */}
               <Link
                 to={nav.link}
-                onClick={toggleMenu}
-                onBlur={hideMenu}
-                onFocus={showMenu}
+                // onClick={menuOpen}
+                // onBlur={hideMenu}
+                // onFocus={showMenu}
               >
                 {nav.text}
               </Link>

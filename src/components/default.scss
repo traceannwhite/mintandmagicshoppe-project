@@ -1,8 +1,9 @@
 * {
-  //   border: 1px solid red;
+  border: 1px solid red;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: montserrat;
 }
 
 // HEADER
@@ -20,6 +21,7 @@
   button {
     border: none;
     background: none;
+    z-index: 60;
   }
   .menu-button img {
     width: 50px;
@@ -34,16 +36,45 @@
 }
 
 .menu-links {
-  display: none;
+  // overflow-y: scroll;
+  background: darkcyan;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  // max-width: 290px;
+  // padding: 0 0 0 20px;
+  // height: 100vh;
+  transition: transform 0.5s ease-in-out;
+  padding: 1em;
+  text-transform: uppercase;
+  z-index: 50;
+  transform: translateX(-100%);
 
   a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    padding: 1em;
+    transition: color 0.3 linear;
+    &:hover {
+      color: #98e4c1;
+    }
   }
 
   .menu-item {
     margin: 10px;
     width: 50%;
   }
+}
+
+.show-menu {
+  transform: translateX(0%);
 }
 
 // MAIN - Company Image
