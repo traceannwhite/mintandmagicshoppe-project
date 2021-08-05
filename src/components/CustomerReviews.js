@@ -13,7 +13,7 @@ const items = [
     src: "https://res.cloudinary.com/dhcagrzcb/image/upload/v1628034032/IMG_4927_isw6vn-_1__wtwe5f.jpg",
     altText: "Slide 1",
     caption:
-      '"I love the way the Forest Mint candle looks and smells in my living room!"',
+      '"I love the way this Forest Mint candle looks and smells in my living room!"',
     header: "Slide 1 Header",
     key: "1",
   },

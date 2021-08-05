@@ -16,11 +16,11 @@ const Main = () => {
       </div>
       <div className="product-cat">
         <img
-          src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627871386/christmas-2924667_kq4dcd.jpg"
+          src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1628173437/glassmintcandle_jpvjh2.jpg"
           alt=""
         ></img>
         <img
-          src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1627871531/beeswax-candle-3413350_fagm5w.jpg"
+          src="https://res.cloudinary.com/dhcagrzcb/image/upload/v1628173437/candlesupplies_iycgbn.jpg"
           alt=""
         ></img>
       </div>

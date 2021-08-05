@@ -3,8 +3,6 @@ import Products from "../components/Products";
 import Button from "../components/Button";
 
 const ShopProducts = (props) => {
-  // const [product, setProduct] = useState([]);
-
   const [products, setProducts] = useState([]);
 
   //function to get the products from API
@@ -21,7 +19,11 @@ const ShopProducts = (props) => {
     const itemsArr = data.items.map((item, index) => {
       return {
         productName: item.fields.productName,
-        image: data.includes.Asset[index].fields.file.url,
+        image: data.includes.Asset.filter((img) => {
+          let id = img.sys.id;
+          return id === item.fields.image.sys.id;
+        })[0].fields.file.url,
+        //recieved help on this from CJ and Sam once I ran into the same issue they had with photos not matching titles
         description: item.fields.description,
         price: item.fields.price,
         inStock: item.fields.inStock,
@@ -30,7 +32,6 @@ const ShopProducts = (props) => {
     });
 
     setProducts(itemsArr);
-    // console.log(itemsArr);
   };
 
   //trigger it to load

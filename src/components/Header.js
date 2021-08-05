@@ -40,7 +40,6 @@ const Header = () => {
         <ul className={`menu-links ${menuOpen ? " show-menu" : ""}`}>
           {navigation.map((nav) => (
             <li key={nav.text}>
-              {/* need to add to the link itself so that you'll still go to new page when menu closes */}
               <Link
                 to={nav.link}
                 activeClassName="active-link"

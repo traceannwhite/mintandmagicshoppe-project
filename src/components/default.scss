@@ -1,5 +1,4 @@
 * {
-  // border: 1px solid red;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +11,10 @@
   width: 100%;
   border: 2px solid black;
   margin: 0 0 20px 0;
+  background: #bce9d4;
+  padding: 10px;
+  border-radius: 10px 0;
+  border: none;
 }
 
 // HEADER
@@ -110,11 +113,12 @@
 .product-cat {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 10px;
 }
 .product-cat img {
-  width: 8em;
-  height: 8em;
+  max-width: 250px;
+  max-height: 250px;
   padding: 10px;
   border-radius: 50%;
 
@@ -126,8 +130,7 @@
 // MAIN - Customer Reviews
 
 .reviews-carousel {
-  padding: 30px;
-  border-radius: 20px;
+  padding: 60px;
   max-width: 700px;
   margin: auto;
 }
@@ -222,14 +225,6 @@
   }
 }
 
-// .side-cart {
-//   background-color: green;
-
-//   p {
-//     display: flex;
-//   }
-// }
-
 //ABOUT
 
 .company-bio {
@@ -284,14 +279,11 @@
   button {
     background: #bce9d4;
     padding: 10px;
+    border-radius: 10px 0;
+    border: none;
   }
 }
 // FOOTER
-
-// body {
-//   position: absolute;
-//   width: 100%;
-// }
 
 .footer {
   background: linear-gradient(0deg, #bce9d4 0%, white 100%);
@@ -317,5 +309,16 @@
     background: black;
     color: white;
     border-radius: 10px 0;
+  }
+}
+
+.social div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  svg {
+    width: 1.5em;
+    height: 1.5em;
   }
 }
