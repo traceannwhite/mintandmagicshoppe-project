@@ -28,7 +28,7 @@ https://discovery.contentful.com/entries/by-content-type/product/%7Bentry_id%7D/
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
 - [wireframes](https://res.cloudinary.com/dhcagrzcb/image/upload/v1627677948/IMG_1732_tolq1k.heic)
-- [react architecture](https://res.cloudinary.com/dhcagrzcb/image/upload/v1627677948/IMG_1734_mvpagr.heic)
+- [react architecture](https://res.cloudinary.com/dhcagrzcb/image/upload/v1628188195/IMG_1808_uibzzr.heic)
 
 ### MVP/PostMVP - 5min
 
@@ -78,38 +78,38 @@ Time frames are also key in the development cycle. You have limited time to code
 
 Unless otherwise noted, time is listed in hours:
 
-| MVP Component                                            | Priority | Estimated Time | Time Invested | Actual Time |
-| -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create React app and files for all components and pages  |    H     |     30 min     |    30 min     |   30 min    |
-| Basic Navbar & Footer                                    |    H     |       1        |    30 min     |   30 min    |
-| Set up basic React routing                               |    H     |       1        |    30 min     |   30 min    |
-| Make API call                                            |    H     |       2        |      1.5      |     1.5     |
-| Create shop now button functionality                     |    H     |       3        |    30 min     |   30 min    |
-| Static main page items                                   |    H     |       3        |      1.5      |     1.5     |
-| Adding products from product page to cart page button    |    H     |       3        |       3       |      3      |
-| Pull API product information                             |    H     |       3        |       2       |      2      |
-| Add content to contentful                                |    H     |       1        |      1.5      |     1.5     |
-| CSS Styling                                              |    H     |       3        |       3       |      3      |
-| Additonal troubleshooting or research                    |    H     |       3        |       2       |      2      |
-| Total                                                    |    H     |      23.5      |     16.5      |    16.5     |
-| -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Post MVP Component                                       | Priority | Estimated Time | Time Invested | Actual Time |
-| -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Remove from Cart Button                                  |    H     |       3        |       3       |      3      |
-| Add function to +/- items in cart                        |    L     |       3        |       0       |     Inc     |
-| Make customer review carousel with React Strap           |    M     |       3        |       1       |     Inc     |
-| Add additional pages with static info                    |    M     |       2        |       2       |      2      |
-| Add functionality to additional pages                    |    M     |       3        |       0       |     Inc     |
-| Contact Form                                             |    M     |       2        |       1       |      1      |
-| Signup/Newsletter                                        |    M     |       3        |       1       |      1      |
-| Social Media Links                                       |    M     |       2        |       1       |      1      |
-| Additional styling                                       |    L     |       3        |       3       |      3      |
-| Total                                                    |    H     |       24       |      12       |     11      |
+| MVP Component                                           | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Create React app and files for all components and pages |    H     |     30 min     |    30 min     |   30 min    |
+| Basic Navbar & Footer                                   |    H     |       1        |    30 min     |   30 min    |
+| Set up basic React routing                              |    H     |       1        |    30 min     |   30 min    |
+| Make API call                                           |    H     |       2        |      1.5      |     1.5     |
+| Create shop now button functionality                    |    H     |       3        |    30 min     |   30 min    |
+| Static main page items                                  |    H     |       3        |      1.5      |     1.5     |
+| Adding products from product page to cart page button   |    H     |       3        |       3       |      3      |
+| Pull API product information                            |    H     |       3        |       2       |      2      |
+| Add content to contentful                               |    H     |       1        |      1.5      |     1.5     |
+| CSS Styling                                             |    H     |       3        |       3       |      3      |
+| Additonal troubleshooting or research                   |    H     |       3        |       2       |      2      |
+| Total                                                   |    H     |      23.5      |     16.5      |    16.5     |
+
+| Post MVP Component                             | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Remove from Cart Button                        |    H     |       3        |       3       |      3      |
+| Add function to +/- items in cart              |    L     |       3        |       0       |     Inc     |
+| Make customer review carousel with React Strap |    M     |       3        |       1       |     Inc     |
+| Add additional pages with static info          |    M     |       2        |       2       |      2      |
+| Add functionality to additional pages          |    M     |       3        |       0       |     Inc     |
+| Contact Form                                   |    M     |       2        |       1       |      1      |
+| Signup/Newsletter                              |    M     |       3        |       1       |      1      |
+| Social Media Links                             |    M     |       2        |       1       |      1      |
+| Additional styling                             |    L     |       3        |       3       |      3      |
+| Total                                          |    H     |       24       |      12       |     11      |
 
 ## Additional Libraries
 
-ReactStrap
-FormSpree
+ReactStrap,
+FormSpree,
 Sass CSS
 
 ## Code Snippet
