@@ -72,21 +72,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components.
 
-<!--
-| Component    |                             Description                              |
-| ------------ | :------------------------------------------------------------------: |
-| App          |                    Sets up app with React Router                     |
-| Header       |                Renders the header, including the nav                 |
-| Footer       |                          Renders the footer                          |
-| Main         |                  Contains Switch/Routes for content                  |
-| Products     |           Renders the products page to display API info              |
-| Question     |     Renders current question via API call and Answer components      |
-| Answer       |         Renders a possible answer using props from Question          |
-| Score        |            Renders player's score received through props             |
-| HighScore    | Form that renders at end of game if the player achieves a high score |
-| Options      |              Renders a form of selectable game options               |
-| Instructions |                Renders rules and info about the game                 |
-| Leaderboard  |               Renders list of top scorers via API call               | -->
+-None
 
 Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
@@ -102,21 +88,23 @@ Unless otherwise noted, time is listed in hours:
 | Static main page items                                   |    H     |       3        |      1.5      |     1.5     |
 | Adding products from product page to cart page button    |    H     |       3        |       3       |      3      |
 | Pull API product information                             |    H     |       3        |       2       |      2      |
-| Add content to contentful                                |    H     |       1        |       1       |      1      |
+| Add content to contentful                                |    H     |       1        |      1.5      |     1.5     |
 | CSS Styling                                              |    H     |       3        |       3       |      3      |
 | Additonal troubleshooting or research                    |    H     |       3        |       2       |      2      |
-| Total                                                    |    H     |      23.5      |      16       |     16      |
-| Post-MVP ----------------------------------------------- | -------- | -------------- | ------------- | ----------- |
-| Remove from Cart Button                                  |    H     |       3        |               |             |
-| Add function to +/- items in cart                        |    L     |       3        |               |             |
+| Total                                                    |    H     |      23.5      |     16.5      |    16.5     |
+| -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Post MVP Component                                       | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Remove from Cart Button                                  |    H     |       3        |       3       |      3      |
+| Add function to +/- items in cart                        |    L     |       3        |       0       |     Inc     |
 | Make customer review carousel with React Strap           |    M     |       3        |       1       |     Inc     |
-| Add additional pages with static info                    |    M     |       2        |               |             |
-| Add functionality to additional pages                    |    M     |       3        |               |             |
-| Contact Form                                             |    M     |       2        |               |             |
-| Signup/Newsletter                                        |    M     |       3        |               |             |
-| Social Media Links                                       |    M     |       2        |               |             |
-| Additional styling                                       |    L     |       3        |               |             |
-| Total                                                    |    H     |       24       |               |             |
+| Add additional pages with static info                    |    M     |       2        |       2       |      2      |
+| Add functionality to additional pages                    |    M     |       3        |       0       |     Inc     |
+| Contact Form                                             |    M     |       2        |       1       |      1      |
+| Signup/Newsletter                                        |    M     |       3        |       1       |      1      |
+| Social Media Links                                       |    M     |       2        |       1       |      1      |
+| Additional styling                                       |    L     |       3        |       3       |      3      |
+| Total                                                    |    H     |       24       |      12       |     11      |
 
 ## Additional Libraries
 
@@ -128,4 +116,4 @@ Sass CSS
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description. Code snippet should not be greater than 10 lines of code.
 
-- TBD
+None
