@@ -2,7 +2,6 @@ import React from "react";
 import Button from "./Button";
 
 const Products = (props) => {
-  console.log("Products", props);
   const loaded = () => {
     return (
       <div className="product-container">
