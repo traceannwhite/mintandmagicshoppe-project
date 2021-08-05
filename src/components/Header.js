@@ -19,7 +19,7 @@ const Header = () => {
     { link: "/ShopProducts", text: "Shop Products" },
     { link: "/Cart", text: "My Cart" },
     { link: "/About", text: "About" },
-    { link: "/Contact", text: "Contact" },
+    { link: "/ContactForm", text: "Contact" },
   ];
 
   return (

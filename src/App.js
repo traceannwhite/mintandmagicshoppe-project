@@ -6,6 +6,7 @@ import Main from "./pages/Main";
 import ShopProducts from "./pages/ShopProducts";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
+import ContactForm from "./pages/ContactForm";
 import Footer from "./components/Footer";
 import "./components/default.scss";
 
@@ -43,8 +44,11 @@ function App() {
         <Route path="/Cart">
           <Cart cart={cart} removeFromCart={removeFromCart} />
         </Route>
-        <Route>
+        <Route path="/About">
           <About />
+        </Route>
+        <Route path="/ContactForm">
+          <ContactForm />
         </Route>
       </Switch>
       <Footer />

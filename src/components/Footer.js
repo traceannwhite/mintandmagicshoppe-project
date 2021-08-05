@@ -1,12 +1,17 @@
 import React from "react";
+import NewsletterForm from "./NewsletterForm";
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="newsletter-form"> Sign up for our newsletter!</div>
       <div className="social">
-        <a href="https://www.instagram.com/mintandmagicshoppe/">Instagram</a>
-        <a href="https://www.facebook.com">Facebook</a>
+        <SocialMedia />
+      </div>
+      <div className="newsletter-form">
+        {" "}
+        <h1>Sign up for our newsletter!</h1>
+        <NewsletterForm />
       </div>
       <div className="cc">Copyright - Mint and Magic Shoppe, LLC</div>
     </div>
