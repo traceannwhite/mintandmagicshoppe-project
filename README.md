@@ -3,7 +3,7 @@
 ## Project Links
 
 - [https://github.com/traceannwhite/project-2](https://github.com/traceannwhite/project-2)
-- [https://project-2-r9a9l683v-traceannwhite.vercel.app/](https://project-2-r9a9l683v-traceannwhite.vercel.app/)
+- [https://project-2-r9a9l683v-traceannwhite.vercel.app/](https://project-2-traceannwhite.vercel.app/)
 
 ## Project Description
 
@@ -121,7 +121,8 @@ Unless otherwise noted, time is listed in hours:
 ## Additional Libraries
 
 ReactStrap
-Saas CSS
+FormSpree
+Sass CSS
 
 ## Code Snippet
 

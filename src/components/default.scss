@@ -47,7 +47,6 @@
 }
 
 .menu-links {
-  // overflow-y: scroll;
   background: white;
   list-style: none;
   position: fixed;
@@ -127,12 +126,29 @@
     opacity: 40%;
   }
 }
-// MAIN - Customer Reviews
+// MAIN - Customer Reviews Carousel
 
-.reviews-carousel {
-  padding: 60px;
-  max-width: 700px;
-  margin: auto;
+.carousel-caption.d-none {
+  display: block !important;
+  color: white;
+
+  p {
+    background-color: rgba(0, 0, 0, 0.27);
+    border-radius: 10px 0;
+    color: white;
+    transform: translateY(50px);
+  }
+}
+
+.custom-tag.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-tag.carousel-item img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 // SHOP PRODUCTS PAGE
@@ -170,7 +186,6 @@
 
   .name {
     font-size: 1em;
-    // padding: 10px;
     text-transform: uppercase;
   }
   img {
